@@ -77,7 +77,7 @@ class Swiper extends Component {
       nextState.labelType !== state.labelType ||
       nextState.swipedAllCards !== state.swipedAllCards
     )
-    return propsChanged || stateChanged
+    return true
   }
 
   componentWillUnmount = () => {
